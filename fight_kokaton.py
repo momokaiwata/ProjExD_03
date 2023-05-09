@@ -108,7 +108,7 @@ class Bomb:
         screen.blit(self._img, self._rct)
 
 
-def main():
+def main(): 
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))
     clock = pg.time.Clock()
