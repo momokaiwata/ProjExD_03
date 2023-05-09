@@ -144,6 +144,9 @@ class Beam:
         screen.blit(self._img, self._rct)
 
 
+        
+
+
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))
@@ -186,6 +189,7 @@ def main():
                     del bombs[i]
                     bird.change_img(6, screen)
                     break
+
 
         pg.display.update()
         clock.tick(1000)
