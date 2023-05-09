@@ -139,7 +139,7 @@ def main():
         clock.tick(1000)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #
     pg.init()
     main()
     pg.quit()
