@@ -143,7 +143,22 @@ class Beam:
         self._rct.move_ip(self._vx, self._vy)
         screen.blit(self._img, self._rct)
 
+class Explosion:
+    """
+    爆弾撃ち落とし時のエフェクト
+    """
+    def __init__(self):
+        self._img1 = pg.image.load(f"ex03/fig/explosion.gif")
+        self._img1 = pg.transform.flip(self._img1, True, False)
+        self._img1 = pg.transform.rotozoom(self._img1, 90, 2.0)
+        self._img1 = pg.transform.rotozoom(self._img1,-90, 2.0)
 
+    def update(self, bii: Bomb):
+        # self._rct.center_x()  #x方向の衝突判定
+        # self._rct.center_y()  #y方向の衝突判定
+
+        for bii._rct.center in bii._rct.left: #ビームの左側が爆弾の中心に入ったら
+            #画像表示
         
 
 
